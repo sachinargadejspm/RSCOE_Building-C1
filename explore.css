@@ -1,0 +1,184 @@
+body{
+    margin: 0%;
+}
+
+section {
+    position: fixed;
+    height: 1500px;
+    width: 100%;
+    background-color: #000000;
+    background-position: 100% 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 950px;
+}
+
+
+
+
+
+/*SEARCHBOX*/
+
+.container{
+    position: static;
+    float: right;
+}
+.wrapper {
+    text-align: center;
+    width: 300px;
+    z-index: 1px;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    background: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 7px 7px rgba(255, 255, 255, 0.428);
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0px;
+    border-radius: 3px;
+    border: 1px solid #ff0000;;  
+
+}
+
+
+input {
+    opacity: 1;
+    pointer-events: auto;
+    width: 83.5%;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0px 40px 0px 10px;
+    font-size: 15px;
+    box-shadow: 0px 1px 4px rgba(223, 206, 206, 0.574);
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.results {
+    padding: 0px;
+}
+
+.results ul {
+    margin: 0;
+    padding: 0;
+}
+
+.results ul li {
+    list-style: none;
+    border-radius: 3px;
+    opacity: 0;
+    display: none;
+    padding: 8px 12px;
+    transition: all .5s linear;
+}
+
+.show .results ul li {
+    opacity: 1;
+    display: block;
+}
+
+.show .results {
+    padding: 10px;
+}
+
+.results ul li:hover {
+    background: #c0bdbd
+}
+
+
+
+
+/*SELECT THE FLOOR ANIMATION*/
+.animate-charcter {
+    text-align: center !important;
+    text-transform: uppercase;
+    background-image: linear-gradient(208deg,
+            #db1313 10%,
+            #44107a 15%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: center-block;
+    font-size: 50px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+/* NAVBAR*/
+header {
+    position: relative;
+    top: 0vh;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: red;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    width: none;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
